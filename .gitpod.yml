@@ -8,12 +8,14 @@ tasks:
   - init: |
       git clone https://github.com/wagtail/wagtail.git
       cd wagtail
+      git remote rename origin upstream
       pip install -e '.[testing,docs]' -U
       npm install --no-save
       npm run build
       cd ..
       git clone https://github.com/wagtail/bakerydemo.git
       cd bakerydemo
+      git remote rename origin upstream
       cp bakerydemo/settings/local.py.example bakerydemo/settings/local.py
       echo "DJANGO_SETTINGS_MODULE=bakerydemo.settings.local" > .env
       sed -i 's/wagtail>=/# wagtail>=/g' requirements/base.txt
