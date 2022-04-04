@@ -15,12 +15,7 @@
         "python.linting.flake8Enabled": true,
         "python.linting.pylintEnabled": false,
         "python.formatting.provider": "black",
-        "python.formatting.blackArgs": [
-            "--line-length",
-            "120",
-            "--target-version",
-            "py38"
-        ],
+        "python.formatting.blackArgs": [],
         "[python]": {
             "editor.codeActionsOnSave": {
                 "source.organizeImports": true
