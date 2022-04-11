@@ -1,13 +1,13 @@
 {
-	"folders": [
-		{
-			"path": "./wagtail"
-		},
-		{
-			"path": "./bakerydemo"
-		}
-	],
-	"settings": {
+    "folders": [
+        {
+            "path": "./wagtail"
+        },
+        {
+            "path": "./bakerydemo"
+        }
+    ],
+    "settings": {
         "files.trimTrailingWhitespace": true,
         "files.insertFinalNewline": true,
         "editor.formatOnSave": true,
@@ -44,7 +44,9 @@
         },
         "[yaml]": {
             "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[html]": {
+            "editor.formatOnSave": false
         }
     }
-
 }
